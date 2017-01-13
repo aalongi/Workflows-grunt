@@ -10,8 +10,8 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					//look for scripts.js in components folder and compress it into new js file
-					'_/js/script.js': ['_/components/js/*.js']
+					//look for scripts.js in development folder and compress it into procution js file
+					'_/production/js/script.js': ['_/development/js/*.js']
 				} //files
 			} //my_target
 		}, //uglify
@@ -30,14 +30,14 @@ module.exports = function(grunt) {
 			//watching for js changes
 			scripts: {
 				//watch:
-				files: ['_/components/js/*.js'],
+				files: ['_/development/development/js/*.js'],
 				//execute:
 				tasks: ['uglify']
 			},//scripts
 
 			sass: {
 				//watch:
-				files: ['_/components/sass/*.scss'],
+				files: ['_/development/sass/*.scss'],
 				//execute:
 				tasks: ['compass']
 			},//sass
