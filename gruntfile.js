@@ -30,7 +30,7 @@ module.exports = function(grunt) {
 			//watching for js changes
 			scripts: {
 				//watch:
-				files: ['_/development/development/js/*.js'],
+				files: ['_/development/js/*.js'],
 				//execute:
 				tasks: ['uglify']
 			},//scripts
